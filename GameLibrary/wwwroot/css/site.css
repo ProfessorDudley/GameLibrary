@@ -1,0 +1,15 @@
+body {
+  margin: 0 auto;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+.container {
+  border: 1px solid red;
+  background-color:azure;
+}

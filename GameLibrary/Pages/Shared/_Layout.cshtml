@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GameLibrary</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GameLibrary.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/Library/Index">Library</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class=" container">
+        &copy; 2024 - GameLibrary - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
